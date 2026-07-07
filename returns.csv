@@ -1,0 +1,548 @@
+return_id,order_item_id,return_date,reason
+1,25,2025-01-12,Changed mind
+2,38,2025-01-24,Wrong size/fit
+3,42,2025-01-20,Damaged in transit
+4,69,2025-01-15,Found cheaper elsewhere
+5,73,2025-01-16,Wrong size/fit
+6,76,2025-01-24,Found cheaper elsewhere
+7,94,2025-01-20,Changed mind
+8,118,2025-01-19,Not as described
+9,152,2025-02-02,Damaged in transit
+10,153,2025-01-25,Wrong size/fit
+11,164,2025-02-06,Not as described
+12,169,2025-02-01,Damaged in transit
+13,189,2025-01-26,Wrong size/fit
+14,193,2025-02-03,Changed mind
+15,194,2025-02-07,Wrong size/fit
+16,199,2025-01-24,Wrong size/fit
+17,224,2025-02-08,Damaged in transit
+18,251,2025-02-10,Changed mind
+19,253,2025-02-16,Changed mind
+20,257,2025-02-08,Changed mind
+21,258,2025-02-02,Changed mind
+22,285,2025-02-07,Found cheaper elsewhere
+23,301,2025-02-13,Wrong size/fit
+24,302,2025-02-17,Changed mind
+25,349,2025-02-23,Wrong size/fit
+26,355,2025-02-14,Damaged in transit
+27,360,2025-02-09,Wrong size/fit
+28,380,2025-02-24,Wrong size/fit
+29,385,2025-02-12,Not as described
+30,386,2025-02-22,Not as described
+31,391,2025-02-21,Wrong size/fit
+32,412,2025-02-26,Changed mind
+33,420,2025-03-05,Found cheaper elsewhere
+34,422,2025-02-21,Changed mind
+35,440,2025-03-03,Wrong size/fit
+36,447,2025-03-06,Found cheaper elsewhere
+37,470,2025-03-07,Damaged in transit
+38,476,2025-02-25,Wrong size/fit
+39,491,2025-03-09,Changed mind
+40,510,2025-03-01,Wrong size/fit
+41,535,2025-03-09,Not as described
+42,552,2025-03-12,Not as described
+43,556,2025-03-04,Damaged in transit
+44,589,2025-03-11,Not as described
+45,594,2025-03-08,Wrong size/fit
+46,615,2025-03-26,Changed mind
+47,622,2025-03-27,Wrong size/fit
+48,648,2025-03-26,Not as described
+49,691,2025-03-29,Wrong size/fit
+50,708,2025-03-30,Damaged in transit
+51,715,2025-03-21,Changed mind
+52,719,2025-04-06,Not as described
+53,741,2025-03-21,Changed mind
+54,746,2025-03-25,Changed mind
+55,750,2025-04-08,Wrong size/fit
+56,763,2025-04-04,Damaged in transit
+57,776,2025-03-26,Damaged in transit
+58,784,2025-04-01,Changed mind
+59,807,2025-04-08,Not as described
+60,808,2025-04-07,Wrong size/fit
+61,821,2025-04-07,Wrong size/fit
+62,828,2025-03-30,Wrong size/fit
+63,850,2025-04-05,Damaged in transit
+64,855,2025-04-05,Damaged in transit
+65,858,2025-04-17,Changed mind
+66,864,2025-04-13,Changed mind
+67,888,2025-04-09,Not as described
+68,911,2025-04-13,Found cheaper elsewhere
+69,926,2025-04-21,Not as described
+70,932,2025-04-14,Not as described
+71,991,2025-05-02,Not as described
+72,994,2025-04-21,Found cheaper elsewhere
+73,1000,2025-04-30,Changed mind
+74,1007,2025-04-22,Damaged in transit
+75,1009,2025-05-03,Changed mind
+76,1018,2025-04-24,Found cheaper elsewhere
+77,1019,2025-04-19,Wrong size/fit
+78,1022,2025-04-25,Wrong size/fit
+79,1039,2025-04-26,Changed mind
+80,1055,2025-05-06,Not as described
+81,1090,2025-05-09,Damaged in transit
+82,1099,2025-04-27,Damaged in transit
+83,1116,2025-05-03,Damaged in transit
+84,1140,2025-05-14,Not as described
+85,1141,2025-05-06,Found cheaper elsewhere
+86,1154,2025-05-15,Damaged in transit
+87,1157,2025-05-13,Wrong size/fit
+88,1170,2025-05-12,Changed mind
+89,1176,2025-05-13,Changed mind
+90,1202,2025-05-11,Changed mind
+91,1206,2025-05-10,Changed mind
+92,1211,2025-05-17,Damaged in transit
+93,1221,2025-05-17,Changed mind
+94,1227,2025-05-21,Damaged in transit
+95,1230,2025-05-24,Wrong size/fit
+96,1245,2025-05-24,Damaged in transit
+97,1260,2025-05-30,Not as described
+98,1268,2025-05-25,Damaged in transit
+99,1274,2025-05-26,Changed mind
+100,1277,2025-05-26,Damaged in transit
+101,1282,2025-05-15,Changed mind
+102,1294,2025-05-17,Damaged in transit
+103,1303,2025-06-02,Damaged in transit
+104,1305,2025-05-21,Damaged in transit
+105,1319,2025-05-31,Wrong size/fit
+106,1326,2025-06-02,Changed mind
+107,1350,2025-05-23,Wrong size/fit
+108,1354,2025-05-30,Changed mind
+109,1361,2025-05-23,Changed mind
+110,1364,2025-06-08,Changed mind
+111,1369,2025-06-08,Changed mind
+112,1386,2025-06-08,Wrong size/fit
+113,1408,2025-06-09,Found cheaper elsewhere
+114,1419,2025-05-27,Not as described
+115,1427,2025-05-30,Changed mind
+116,1431,2025-06-06,Wrong size/fit
+117,1444,2025-06-05,Not as described
+118,1447,2025-06-02,Wrong size/fit
+119,1465,2025-06-01,Wrong size/fit
+120,1467,2025-06-01,Damaged in transit
+121,1493,2025-06-17,Not as described
+122,1515,2025-06-16,Damaged in transit
+123,1529,2025-06-09,Not as described
+124,1531,2025-06-20,Found cheaper elsewhere
+125,1544,2025-06-19,Changed mind
+126,1553,2025-06-15,Damaged in transit
+127,1558,2025-06-09,Damaged in transit
+128,1574,2025-06-24,Found cheaper elsewhere
+129,1578,2025-06-24,Damaged in transit
+130,1582,2025-06-27,Changed mind
+131,1583,2025-06-21,Changed mind
+132,1587,2025-06-18,Changed mind
+133,1593,2025-06-21,Wrong size/fit
+134,1602,2025-07-01,Wrong size/fit
+135,1610,2025-06-27,Changed mind
+136,1628,2025-06-20,Damaged in transit
+137,1634,2025-06-24,Changed mind
+138,1639,2025-06-29,Changed mind
+139,1641,2025-07-02,Changed mind
+140,1646,2025-06-26,Wrong size/fit
+141,1659,2025-07-02,Not as described
+142,1666,2025-07-06,Not as described
+143,1669,2025-07-09,Wrong size/fit
+144,1681,2025-07-05,Wrong size/fit
+145,1686,2025-06-27,Not as described
+146,1704,2025-07-08,Found cheaper elsewhere
+147,1705,2025-07-11,Not as described
+148,1706,2025-07-05,Changed mind
+149,1708,2025-06-29,Changed mind
+150,1714,2025-06-29,Changed mind
+151,1735,2025-07-16,Changed mind
+152,1736,2025-07-05,Not as described
+153,1751,2025-07-15,Wrong size/fit
+154,1756,2025-07-01,Found cheaper elsewhere
+155,1762,2025-07-01,Changed mind
+156,1763,2025-07-02,Wrong size/fit
+157,1765,2025-07-14,Wrong size/fit
+158,1779,2025-07-18,Damaged in transit
+159,1782,2025-07-08,Changed mind
+160,1798,2025-07-21,Changed mind
+161,1799,2025-07-22,Damaged in transit
+162,1809,2025-07-20,Changed mind
+163,1813,2025-07-24,Not as described
+164,1814,2025-07-13,Changed mind
+165,1816,2025-07-24,Changed mind
+166,1824,2025-07-14,Changed mind
+167,1826,2025-07-09,Found cheaper elsewhere
+168,1837,2025-07-21,Found cheaper elsewhere
+169,1849,2025-07-23,Wrong size/fit
+170,1863,2025-07-22,Changed mind
+171,1869,2025-07-27,Changed mind
+172,1878,2025-07-16,Wrong size/fit
+173,1879,2025-07-18,Wrong size/fit
+174,1887,2025-07-16,Damaged in transit
+175,1902,2025-07-27,Wrong size/fit
+176,1930,2025-07-16,Damaged in transit
+177,1939,2025-07-21,Not as described
+178,1943,2025-08-01,Changed mind
+179,1944,2025-08-01,Damaged in transit
+180,1947,2025-07-20,Changed mind
+181,1952,2025-07-29,Wrong size/fit
+182,1982,2025-08-07,Damaged in transit
+183,1986,2025-07-24,Wrong size/fit
+184,1987,2025-07-22,Not as described
+185,2019,2025-07-30,Changed mind
+186,2022,2025-07-31,Damaged in transit
+187,2027,2025-07-30,Found cheaper elsewhere
+188,2035,2025-08-03,Changed mind
+189,2038,2025-07-27,Changed mind
+190,2045,2025-08-07,Not as described
+191,2051,2025-07-29,Changed mind
+192,2058,2025-07-29,Wrong size/fit
+193,2064,2025-07-29,Found cheaper elsewhere
+194,2066,2025-07-30,Found cheaper elsewhere
+195,2073,2025-08-03,Found cheaper elsewhere
+196,2077,2025-08-08,Changed mind
+197,2100,2025-08-03,Changed mind
+198,2104,2025-08-17,Changed mind
+199,2167,2025-08-23,Found cheaper elsewhere
+200,2168,2025-08-14,Wrong size/fit
+201,2178,2025-08-15,Changed mind
+202,2187,2025-08-13,Changed mind
+203,2190,2025-08-19,Not as described
+204,2191,2025-08-10,Changed mind
+205,2209,2025-08-21,Changed mind
+206,2216,2025-08-23,Wrong size/fit
+207,2221,2025-08-11,Wrong size/fit
+208,2223,2025-08-21,Changed mind
+209,2231,2025-08-18,Wrong size/fit
+210,2239,2025-08-20,Found cheaper elsewhere
+211,2253,2025-08-24,Changed mind
+212,2267,2025-08-20,Wrong size/fit
+213,2280,2025-08-23,Damaged in transit
+214,2283,2025-08-20,Changed mind
+215,2294,2025-08-30,Changed mind
+216,2296,2025-08-19,Changed mind
+217,2302,2025-08-24,Not as described
+218,2310,2025-08-26,Damaged in transit
+219,2312,2025-08-22,Damaged in transit
+220,2319,2025-08-26,Found cheaper elsewhere
+221,2328,2025-08-29,Found cheaper elsewhere
+222,2336,2025-08-25,Changed mind
+223,2342,2025-09-07,Damaged in transit
+224,2356,2025-09-07,Damaged in transit
+225,2362,2025-09-11,Damaged in transit
+226,2365,2025-09-13,Damaged in transit
+227,2368,2025-09-11,Changed mind
+228,2376,2025-09-02,Wrong size/fit
+229,2383,2025-09-03,Changed mind
+230,2387,2025-09-12,Damaged in transit
+231,2391,2025-08-31,Wrong size/fit
+232,2400,2025-09-10,Not as described
+233,2409,2025-09-09,Damaged in transit
+234,2410,2025-09-10,Found cheaper elsewhere
+235,2411,2025-09-12,Not as described
+236,2414,2025-09-10,Changed mind
+237,2416,2025-09-20,Damaged in transit
+238,2418,2025-09-10,Damaged in transit
+239,2419,2025-09-02,Changed mind
+240,2425,2025-09-17,Damaged in transit
+241,2443,2025-09-20,Wrong size/fit
+242,2458,2025-09-23,Damaged in transit
+243,2460,2025-09-23,Changed mind
+244,2461,2025-09-24,Not as described
+245,2473,2025-09-17,Changed mind
+246,2479,2025-09-14,Changed mind
+247,2498,2025-09-16,Changed mind
+248,2499,2025-09-13,Changed mind
+249,2501,2025-09-11,Changed mind
+250,2504,2025-09-18,Not as described
+251,2527,2025-09-20,Wrong size/fit
+252,2548,2025-09-17,Not as described
+253,2549,2025-09-27,Changed mind
+254,2553,2025-09-21,Damaged in transit
+255,2562,2025-09-23,Damaged in transit
+256,2564,2025-09-20,Damaged in transit
+257,2565,2025-09-29,Found cheaper elsewhere
+258,2568,2025-09-25,Damaged in transit
+259,2573,2025-09-23,Not as described
+260,2581,2025-09-19,Damaged in transit
+261,2582,2025-10-05,Changed mind
+262,2583,2025-09-22,Changed mind
+263,2586,2025-09-25,Wrong size/fit
+264,2598,2025-10-01,Not as described
+265,2599,2025-09-21,Changed mind
+266,2602,2025-09-22,Wrong size/fit
+267,2608,2025-10-01,Changed mind
+268,2609,2025-10-04,Changed mind
+269,2616,2025-09-23,Found cheaper elsewhere
+270,2626,2025-10-08,Changed mind
+271,2627,2025-10-03,Found cheaper elsewhere
+272,2634,2025-10-03,Damaged in transit
+273,2649,2025-10-10,Changed mind
+274,2650,2025-10-01,Not as described
+275,2652,2025-10-05,Damaged in transit
+276,2656,2025-10-12,Found cheaper elsewhere
+277,2681,2025-10-12,Damaged in transit
+278,2685,2025-10-13,Changed mind
+279,2701,2025-10-04,Not as described
+280,2702,2025-10-07,Changed mind
+281,2703,2025-10-18,Wrong size/fit
+282,2704,2025-10-07,Not as described
+283,2737,2025-10-21,Changed mind
+284,2739,2025-10-15,Wrong size/fit
+285,2749,2025-10-08,Changed mind
+286,2750,2025-10-19,Not as described
+287,2758,2025-10-11,Damaged in transit
+288,2760,2025-10-10,Changed mind
+289,2769,2025-10-16,Changed mind
+290,2770,2025-10-11,Damaged in transit
+291,2780,2025-10-19,Not as described
+292,2784,2025-10-14,Wrong size/fit
+293,2788,2025-10-18,Damaged in transit
+294,2793,2025-10-25,Not as described
+295,2795,2025-10-11,Wrong size/fit
+296,2797,2025-10-19,Changed mind
+297,2814,2025-10-09,Changed mind
+298,2815,2025-10-27,Found cheaper elsewhere
+299,2821,2025-10-20,Wrong size/fit
+300,2825,2025-10-16,Damaged in transit
+301,2827,2025-10-16,Found cheaper elsewhere
+302,2828,2025-10-20,Not as described
+303,2829,2025-10-12,Changed mind
+304,2848,2025-10-28,Found cheaper elsewhere
+305,2852,2025-10-20,Wrong size/fit
+306,2863,2025-10-15,Damaged in transit
+307,2866,2025-10-28,Changed mind
+308,2868,2025-10-16,Found cheaper elsewhere
+309,2886,2025-10-24,Changed mind
+310,2908,2025-10-26,Changed mind
+311,2912,2025-10-20,Not as described
+312,2924,2025-11-06,Changed mind
+313,2928,2025-11-06,Not as described
+314,2932,2025-10-25,Changed mind
+315,2942,2025-10-27,Changed mind
+316,2944,2025-10-26,Changed mind
+317,2951,2025-10-28,Found cheaper elsewhere
+318,2956,2025-11-05,Damaged in transit
+319,2959,2025-10-31,Damaged in transit
+320,2970,2025-11-08,Changed mind
+321,2979,2025-11-01,Not as described
+322,2984,2025-11-10,Not as described
+323,2988,2025-11-12,Damaged in transit
+324,3012,2025-11-01,Wrong size/fit
+325,3013,2025-11-12,Found cheaper elsewhere
+326,3018,2025-11-06,Changed mind
+327,3036,2025-11-18,Found cheaper elsewhere
+328,3044,2025-11-20,Changed mind
+329,3047,2025-11-11,Changed mind
+330,3050,2025-11-19,Changed mind
+331,3064,2025-11-06,Found cheaper elsewhere
+332,3070,2025-11-08,Found cheaper elsewhere
+333,3079,2025-11-14,Wrong size/fit
+334,3080,2025-11-16,Changed mind
+335,3082,2025-11-16,Changed mind
+336,3088,2025-11-16,Damaged in transit
+337,3091,2025-11-18,Changed mind
+338,3103,2025-11-09,Changed mind
+339,3115,2025-11-24,Damaged in transit
+340,3125,2025-11-23,Found cheaper elsewhere
+341,3130,2025-11-14,Wrong size/fit
+342,3134,2025-11-18,Changed mind
+343,3141,2025-11-30,Changed mind
+344,3142,2025-11-17,Damaged in transit
+345,3149,2025-11-17,Not as described
+346,3151,2025-11-16,Changed mind
+347,3167,2025-11-23,Changed mind
+348,3184,2025-11-29,Wrong size/fit
+349,3190,2025-12-04,Changed mind
+350,3194,2025-11-25,Not as described
+351,3200,2025-11-21,Changed mind
+352,3203,2025-11-28,Changed mind
+353,3206,2025-11-24,Damaged in transit
+354,3212,2025-11-30,Damaged in transit
+355,3220,2025-12-02,Wrong size/fit
+356,3221,2025-11-30,Changed mind
+357,3230,2025-11-26,Changed mind
+358,3247,2025-12-02,Changed mind
+359,3259,2025-12-07,Changed mind
+360,3260,2025-12-08,Damaged in transit
+361,3262,2025-11-27,Changed mind
+362,3268,2025-11-29,Damaged in transit
+363,3271,2025-12-12,Damaged in transit
+364,3272,2025-12-04,Changed mind
+365,3275,2025-12-06,Changed mind
+366,3282,2025-12-13,Changed mind
+367,3301,2025-12-13,Found cheaper elsewhere
+368,3304,2025-12-09,Wrong size/fit
+369,3311,2025-12-11,Changed mind
+370,3316,2025-12-04,Wrong size/fit
+371,3336,2025-12-08,Not as described
+372,3340,2025-12-13,Wrong size/fit
+373,3358,2025-12-06,Changed mind
+374,3362,2025-12-05,Not as described
+375,3364,2025-12-14,Found cheaper elsewhere
+376,3369,2025-12-08,Changed mind
+377,3370,2025-12-14,Damaged in transit
+378,3377,2025-12-16,Wrong size/fit
+379,3379,2025-12-22,Wrong size/fit
+380,3381,2025-12-22,Changed mind
+381,3388,2025-12-09,Wrong size/fit
+382,3395,2025-12-07,Damaged in transit
+383,3397,2025-12-21,Not as described
+384,3399,2025-12-12,Wrong size/fit
+385,3404,2025-12-08,Wrong size/fit
+386,3412,2025-12-16,Wrong size/fit
+387,3416,2025-12-24,Not as described
+388,3421,2025-12-15,Changed mind
+389,3422,2025-12-18,Not as described
+390,3423,2025-12-13,Found cheaper elsewhere
+391,3424,2025-12-12,Changed mind
+392,3426,2025-12-17,Damaged in transit
+393,3428,2025-12-23,Changed mind
+394,3444,2025-12-25,Changed mind
+395,3446,2025-12-29,Not as described
+396,3448,2025-12-16,Damaged in transit
+397,3450,2025-12-20,Found cheaper elsewhere
+398,3464,2025-12-18,Wrong size/fit
+399,3468,2025-12-17,Not as described
+400,3471,2025-12-24,Found cheaper elsewhere
+401,3480,2026-01-03,Damaged in transit
+402,3489,2025-12-23,Changed mind
+403,3492,2025-12-31,Changed mind
+404,3496,2025-12-18,Changed mind
+405,3498,2025-12-24,Damaged in transit
+406,3501,2025-12-29,Not as described
+407,3507,2025-12-25,Damaged in transit
+408,3514,2025-12-30,Damaged in transit
+409,3522,2026-01-06,Damaged in transit
+410,3526,2025-12-29,Not as described
+411,3528,2026-01-08,Found cheaper elsewhere
+412,3538,2025-12-29,Damaged in transit
+413,3540,2026-01-06,Changed mind
+414,3543,2026-01-08,Found cheaper elsewhere
+415,3548,2026-01-05,Not as described
+416,3553,2026-01-05,Wrong size/fit
+417,3558,2026-01-10,Changed mind
+418,3561,2026-01-02,Changed mind
+419,3563,2026-01-12,Not as described
+420,3571,2025-12-29,Changed mind
+421,3576,2026-01-15,Changed mind
+422,3582,2026-01-10,Wrong size/fit
+423,3586,2025-12-31,Changed mind
+424,3591,2026-01-08,Changed mind
+425,3598,2026-01-03,Not as described
+426,3599,2026-01-15,Changed mind
+427,3600,2026-01-06,Changed mind
+428,3605,2026-01-01,Changed mind
+429,3606,2026-01-06,Changed mind
+430,3614,2026-01-06,Wrong size/fit
+431,3616,2026-01-17,Damaged in transit
+432,3619,2026-01-15,Damaged in transit
+433,3620,2026-01-10,Not as described
+434,3623,2026-01-19,Wrong size/fit
+435,3624,2026-01-17,Found cheaper elsewhere
+436,3627,2026-01-11,Changed mind
+437,3638,2026-01-14,Changed mind
+438,3651,2026-01-08,Found cheaper elsewhere
+439,3656,2026-01-09,Not as described
+440,3662,2026-01-11,Changed mind
+441,3665,2026-01-23,Not as described
+442,3667,2026-01-15,Wrong size/fit
+443,3677,2026-01-12,Changed mind
+444,3680,2026-01-16,Not as described
+445,3681,2026-01-20,Damaged in transit
+446,3712,2026-01-13,Changed mind
+447,3718,2026-01-19,Wrong size/fit
+448,3721,2026-01-17,Found cheaper elsewhere
+449,3723,2026-01-24,Not as described
+450,3724,2026-01-26,Wrong size/fit
+451,3726,2026-01-22,Changed mind
+452,3729,2026-01-24,Found cheaper elsewhere
+453,3765,2026-01-22,Damaged in transit
+454,3772,2026-01-28,Wrong size/fit
+455,3773,2026-01-16,Not as described
+456,3786,2026-01-18,Wrong size/fit
+457,3787,2026-01-26,Wrong size/fit
+458,3793,2026-01-24,Changed mind
+459,3797,2026-01-29,Changed mind
+460,3800,2026-01-30,Damaged in transit
+461,3804,2026-01-24,Found cheaper elsewhere
+462,3807,2026-01-28,Wrong size/fit
+463,3819,2026-01-24,Not as described
+464,3822,2026-01-31,Wrong size/fit
+465,3824,2026-02-03,Found cheaper elsewhere
+466,3830,2026-02-09,Changed mind
+467,3839,2026-01-28,Changed mind
+468,3845,2026-02-11,Damaged in transit
+469,3849,2026-02-02,Wrong size/fit
+470,3852,2026-02-05,Damaged in transit
+471,3863,2026-01-26,Changed mind
+472,3864,2026-02-02,Not as described
+473,3883,2026-02-03,Not as described
+474,3884,2026-02-11,Not as described
+475,3892,2026-02-13,Changed mind
+476,3905,2026-02-10,Not as described
+477,3913,2026-02-11,Changed mind
+478,3920,2026-02-02,Wrong size/fit
+479,3921,2026-02-03,Damaged in transit
+480,3923,2026-02-02,Found cheaper elsewhere
+481,3929,2026-02-06,Changed mind
+482,3936,2026-02-11,Damaged in transit
+483,3939,2026-02-19,Damaged in transit
+484,3943,2026-02-11,Found cheaper elsewhere
+485,3947,2026-02-04,Wrong size/fit
+486,3948,2026-02-10,Wrong size/fit
+487,3950,2026-02-12,Not as described
+488,3959,2026-02-13,Wrong size/fit
+489,3960,2026-02-03,Not as described
+490,3971,2026-02-23,Changed mind
+491,3974,2026-02-08,Found cheaper elsewhere
+492,3975,2026-02-08,Found cheaper elsewhere
+493,3976,2026-02-07,Changed mind
+494,3986,2026-02-20,Damaged in transit
+495,3991,2026-02-17,Wrong size/fit
+496,3993,2026-02-10,Damaged in transit
+497,4001,2026-02-11,Damaged in transit
+498,4004,2026-02-21,Damaged in transit
+499,4007,2026-02-10,Damaged in transit
+500,4014,2026-02-13,Damaged in transit
+501,4029,2026-02-23,Not as described
+502,4032,2026-02-24,Not as described
+503,4037,2026-02-20,Not as described
+504,4052,2026-02-16,Changed mind
+505,4053,2026-02-22,Changed mind
+506,4058,2026-03-05,Wrong size/fit
+507,4066,2026-03-06,Not as described
+508,4067,2026-02-25,Wrong size/fit
+509,4071,2026-03-03,Changed mind
+510,4074,2026-03-07,Found cheaper elsewhere
+511,4075,2026-02-25,Wrong size/fit
+512,4076,2026-03-04,Changed mind
+513,4077,2026-03-08,Found cheaper elsewhere
+514,4083,2026-02-27,Wrong size/fit
+515,4087,2026-03-02,Changed mind
+516,4088,2026-02-26,Wrong size/fit
+517,4092,2026-03-04,Wrong size/fit
+518,4093,2026-03-01,Changed mind
+519,4094,2026-03-05,Changed mind
+520,4097,2026-02-28,Changed mind
+521,4104,2026-03-06,Not as described
+522,4113,2026-03-12,Not as described
+523,4117,2026-03-02,Damaged in transit
+524,4118,2026-03-06,Wrong size/fit
+525,4120,2026-03-11,Not as described
+526,4127,2026-03-01,Found cheaper elsewhere
+527,4129,2026-03-04,Not as described
+528,4130,2026-03-06,Found cheaper elsewhere
+529,4132,2026-03-09,Changed mind
+530,4133,2026-03-04,Damaged in transit
+531,4137,2026-03-10,Not as described
+532,4138,2026-03-11,Damaged in transit
+533,4140,2026-03-09,Changed mind
+534,4141,2026-03-11,Not as described
+535,4144,2026-03-06,Not as described
+536,4146,2026-03-14,Found cheaper elsewhere
+537,4149,2026-03-13,Not as described
+538,4150,2026-03-03,Changed mind
+539,4157,2026-03-14,Changed mind
+540,4161,2026-03-11,Changed mind
+541,4162,2026-03-08,Wrong size/fit
+542,4166,2026-03-08,Damaged in transit
+543,4174,2026-03-18,Damaged in transit
+544,4180,2026-03-06,Changed mind
+545,4183,2026-03-10,Found cheaper elsewhere
+546,4186,2026-03-11,Not as described
+547,4205,2026-03-17,Not as described

@@ -1,0 +1,16 @@
+region_id,region_code,region_name,country,continent
+1,NE1,New England,United States,North America
+2,MA1,Mid-Atlantic,United States,North America
+3,SE1,Southeast,United States,North America
+4,MW1,Midwest,United States,North America
+5,SW1,Southwest,United States,North America
+6,WC1,West Coast,United States,North America
+7,PNW1,Pacific Northwest,United States,North America
+8,ONT1,Ontario,Canada,North America
+9,BC1,British Columbia,Canada,North America
+10,UK1,United Kingdom,United Kingdom,Europe
+11,FR1,France,France,Europe
+12,DE1,Germany,Germany,Europe
+13,AU1,Australia East,Australia,Oceania
+14,SG1,Singapore,Singapore,Asia
+15,MX1,Mexico,Mexico,North America

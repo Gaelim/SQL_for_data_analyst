@@ -1,0 +1,67 @@
+product_id,product_name,category,subcategory,cost,list_price
+1,Cast Iron Skillet,Kitchen,Cookware,48.25,106.5
+2,Nonstick Saucepan,Kitchen,Cookware,52.65,125.74
+3,Stockpot,Kitchen,Cookware,12.9,33.32
+4,Dutch Oven,Kitchen,Cookware,47.58,116.58
+5,Griddle Pan,Kitchen,Cookware,14.66,32.48
+6,Electric Kettle,Kitchen,Small Appliances,27.28,69.53
+7,Stand Mixer,Kitchen,Small Appliances,41.48,102.7
+8,Toaster,Kitchen,Small Appliances,31.06,63.95
+9,Coffee Grinder,Kitchen,Small Appliances,36.84,71.64
+10,Food Processor,Kitchen,Small Appliances,51.04,119.54
+11,Bamboo Utensil Set,Kitchen,Utensils,47.42,101.87
+12,Silicone Spatula,Kitchen,Utensils,58.48,147.67
+13,Chef Knife,Kitchen,Utensils,48.48,98.72
+14,Cutting Board,Kitchen,Utensils,32.27,62.3
+15,Measuring Cups,Kitchen,Utensils,16.02,38.1
+16,Cotton Sheet Set,Bedding,Sheets,46.73,120.44
+17,Linen Sheet Set,Bedding,Sheets,24.94,53.85
+18,Percale Sheet Set,Bedding,Sheets,32.42,65.9
+19,Flannel Sheet Set,Bedding,Sheets,14.76,32.96
+20,Down Alternative Comforter,Bedding,Comforters,19.8,46.9
+21,Weighted Blanket Comforter,Bedding,Comforters,30.73,76.3
+22,Quilted Comforter,Bedding,Comforters,44.41,94.09
+23,Memory Foam Pillow,Bedding,Pillows,51.28,126.32
+24,Down Pillow,Bedding,Pillows,28.15,59.17
+25,Cooling Gel Pillow,Bedding,Pillows,43.49,86.89
+26,Body Pillow,Bedding,Pillows,18.4,35.05
+27,Bath Towel Set,Bath,Towels,48.92,115.72
+28,Turkish Towel,Bath,Towels,44.67,109.29
+29,Hand Towel Set,Bath,Towels,31.86,73.22
+30,Washcloth Set,Bath,Towels,15.27,30.24
+31,Shower Curtain,Bath,Shower,42.76,95.34
+32,Shower Caddy,Bath,Shower,37.39,91.06
+33,Bath Mat Set,Bath,Shower,41.01,93.81
+34,Shower Bench,Bath,Shower,37.08,78.34
+35,Memory Foam Bath Mat,Bath,Bath Mats,9.6,21.17
+36,Bamboo Bath Mat,Bath,Bath Mats,19.16,41.88
+37,Cotton Bath Rug,Bath,Bath Mats,52.38,108.1
+38,Knit Throw Blanket,Living Room,Throws & Blankets,11.03,23.13
+39,Faux Fur Throw,Living Room,Throws & Blankets,23.27,54.99
+40,Sherpa Blanket,Living Room,Throws & Blankets,36.97,90.53
+41,Ceramic Vase Set,Living Room,Decor,42.54,92.93
+42,Wall Mirror,Living Room,Decor,50.33,101.51
+43,Picture Frame Set,Living Room,Decor,9.18,18.02
+44,Decorative Tray,Living Room,Decor,45.56,101.29
+45,Table Lamp,Living Room,Lighting,16.39,36.89
+46,Floor Lamp,Living Room,Lighting,15.92,38.01
+47,String Lights,Living Room,Lighting,31.2,67.6
+48,Pendant Light,Living Room,Lighting,23.68,55.44
+49,Woven Storage Basket,Storage,Baskets & Bins,26.81,52.58
+50,Fabric Storage Bin,Storage,Baskets & Bins,14.14,36.39
+51,Nesting Basket Set,Storage,Baskets & Bins,55.25,132.04
+52,Closet Shelf Divider,Storage,Closet Organizers,21.83,56.29
+53,Hanging Organizer,Storage,Closet Organizers,48.5,116.49
+54,Shoe Rack,Storage,Closet Organizers,31.37,65.58
+55,Floating Shelf Set,Storage,Shelving,13.01,32.94
+56,Bookcase,Storage,Shelving,31.7,64.72
+57,Ladder Shelf,Storage,Shelving,23.91,55.12
+58,Outdoor Seat Cushion,Outdoor,Cushions,17.19,42.97
+59,Lumbar Pillow,Outdoor,Cushions,47.44,114.03
+60,Bench Cushion,Outdoor,Cushions,30.47,71.27
+61,Ceramic Planter,Outdoor,Planters,38.37,90.36
+62,Hanging Planter,Outdoor,Planters,12.39,27.15
+63,Raised Garden Bed,Outdoor,Planters,10.16,22.82
+64,Outdoor Rug,Outdoor,Patio Decor,25.15,50.33
+65,Solar Lantern,Outdoor,Patio Decor,13.38,30.93
+66,Patio Umbrella,Outdoor,Patio Decor,16.87,42.98
