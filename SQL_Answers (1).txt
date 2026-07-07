@@ -1,0 +1,221 @@
+SQL FOR DATA ANALYSTS (MySQL Edition)
+Answer Key — Full SQL for Every Practice & Homework Question
+==============================================================
+
+Database: loop_and_leaf (7 tables — regions, products, employees,
+customers, orders, order_items, returns)
+
+
+PART 1: IN-COURSE PRACTICE QUESTION ANSWERS
+--------------------------------------------
+
+SECTION 02 — Fundamentals
+Q: 5 priciest Kitchen products
+
+SELECT product_name, category, list_price
+FROM products
+WHERE category = 'Kitchen'
+ORDER BY list_price DESC
+LIMIT 5;
+
+
+SECTION 03 — Chaining Joins Across the Schema
+Q: Total revenue by region
+
+SELECT r.region_name,
+       ROUND(SUM(oi.quantity * oi.unit_price), 2) AS revenue
+FROM order_items oi
+JOIN orders    o ON o.order_id    = oi.order_id
+JOIN customers c ON c.customer_id = o.customer_id
+JOIN regions   r ON r.region_id   = c.region_id
+GROUP BY r.region_name
+ORDER BY revenue DESC;
+
+
+SECTION 03 — Self Joins: Rep -> Manager
+Q: Every sales rep next to their manager's name
+
+SELECT CONCAT(e.first_name, ' ', e.last_name) AS rep,
+       CONCAT(m.first_name, ' ', m.last_name) AS manager
+FROM employees e
+LEFT JOIN employees m
+  ON e.manager_id = m.employee_id
+WHERE e.role = 'Sales Representative';
+
+
+SECTION 04 — GROUP BY & Aggregate Functions
+Q: Revenue and average discount by category
+
+SELECT p.category,
+       COUNT(*) AS items_sold,
+       ROUND(SUM(oi.quantity * oi.unit_price), 2) AS revenue,
+       ROUND(AVG(oi.discount_pct), 1) AS avg_discount
+FROM order_items oi
+JOIN products p ON p.product_id = oi.product_id
+GROUP BY p.category
+ORDER BY revenue DESC;
+
+
+SECTION 05 — Subqueries
+Q: Customers spending above the company average (VIP list)
+
+SELECT c.customer_id, c.first_name, c.last_name
+FROM customers c
+WHERE (
+  SELECT AVG(oi.quantity * oi.unit_price)
+  FROM order_items oi
+  JOIN orders o ON o.order_id = oi.order_id
+  WHERE o.customer_id = c.customer_id
+) > (
+  SELECT AVG(quantity * unit_price) FROM order_items
+);
+
+
+SECTION 05 — CTEs: the WITH Clause
+Q: Months below yearly average revenue
+
+WITH monthly_revenue AS (
+  SELECT DATE_FORMAT(o.order_date, '%Y-%m') AS ym,
+         SUM(oi.quantity * oi.unit_price) AS revenue
+  FROM order_items oi
+  JOIN orders o ON o.order_id = oi.order_id
+  GROUP BY ym
+)
+SELECT ym, revenue
+FROM monthly_revenue
+WHERE revenue < (SELECT AVG(revenue) FROM monthly_revenue);
+
+
+SECTION 06 — RANK() & ROW_NUMBER()
+Q: Rank every rep by total revenue, company-wide
+
+SELECT e.first_name, e.last_name,
+       SUM(oi.quantity * oi.unit_price) AS revenue,
+       RANK() OVER (ORDER BY SUM(oi.quantity * oi.unit_price) DESC) AS sales_rank
+FROM employees e
+JOIN orders o ON o.employee_id = e.employee_id
+JOIN order_items oi ON oi.order_id = o.order_id
+GROUP BY e.employee_id, e.first_name, e.last_name;
+
+Note: PARTITION BY splits the ranking into groups, e.g.
+RANK() OVER (PARTITION BY region_id ORDER BY revenue DESC)
+ranks reps within their own region instead of company-wide.
+
+
+SECTION 06 — LAG() & Running Totals
+Q: Month-over-month change and running cumulative revenue
+
+WITH monthly AS (
+  SELECT DATE_FORMAT(o.order_date, '%Y-%m') AS ym,
+         SUM(oi.quantity * oi.unit_price) AS revenue
+  FROM order_items oi JOIN orders o ON o.order_id = oi.order_id
+  GROUP BY ym
+)
+SELECT ym, revenue,
+       revenue - LAG(revenue) OVER (ORDER BY ym) AS mom_change,
+       SUM(revenue) OVER (ORDER BY ym) AS running_total
+FROM monthly ORDER BY ym;
+
+
+SECTION 07 — Return Rate by Category, Trended
+Q: Is return rate creeping up, and worse in specific categories?
+
+WITH item_returns AS (
+  SELECT oi.order_item_id, p.category, o.order_date,
+         CASE WHEN r.return_id IS NOT NULL THEN 1 ELSE 0 END AS was_returned
+  FROM order_items oi
+  JOIN orders o    ON o.order_id = oi.order_id
+  JOIN products p  ON p.product_id = oi.product_id
+  LEFT JOIN returns r ON r.order_item_id = oi.order_item_id
+)
+SELECT category, DATE_FORMAT(order_date, '%Y-%m') AS ym,
+       ROUND(100.0 * AVG(was_returned), 1) AS return_rate_pct
+FROM item_returns
+GROUP BY category, ym
+ORDER BY category, ym;
+
+
+PART 2: APPENDIX HOMEWORK ANSWERS
+------------------------------------
+
+Q1. [Fundamentals] 5 cheapest products in the Storage category
+
+SELECT product_name, cost, list_price
+FROM products
+WHERE category = 'Storage'
+ORDER BY cost ASC
+LIMIT 5;
+
+
+Q2. [Joins] Customers who signed up but never placed an order
+
+SELECT c.customer_id, c.first_name, c.last_name
+FROM customers c
+LEFT JOIN orders o ON o.customer_id = c.customer_id
+WHERE o.order_id IS NULL;
+
+
+Q3. [Self Joins] Every sales rep with their manager's name
+
+SELECT CONCAT(e.first_name,' ',e.last_name) AS rep,
+       CONCAT(m.first_name,' ',m.last_name) AS manager
+FROM employees e
+LEFT JOIN employees m ON e.manager_id = m.employee_id
+WHERE e.role = 'Sales Representative';
+
+
+Q4. [Aggregation] Categories averaging over 15% discount
+
+SELECT p.category, AVG(oi.discount_pct) AS avg_discount
+FROM order_items oi
+JOIN products p ON p.product_id = oi.product_id
+GROUP BY p.category
+HAVING AVG(oi.discount_pct) > 15;
+
+
+Q5. [Subqueries] Customers whose total spend is above the overall average
+
+SELECT c.customer_id, c.first_name, c.last_name
+FROM customers c
+WHERE (
+  SELECT SUM(oi.quantity*oi.unit_price)
+  FROM order_items oi JOIN orders o ON o.order_id=oi.order_id
+  WHERE o.customer_id = c.customer_id
+) > (
+  SELECT SUM(quantity*unit_price)/COUNT(DISTINCT o2.customer_id)
+  FROM order_items oi2 JOIN orders o2 ON o2.order_id=oi2.order_id
+);
+
+
+Q6. [Window Functions] Rep ranked by revenue within their own region
+
+SELECT e.first_name, e.last_name, e.region_id,
+       SUM(oi.quantity*oi.unit_price) AS revenue,
+       RANK() OVER (PARTITION BY e.region_id
+                    ORDER BY SUM(oi.quantity*oi.unit_price) DESC) AS region_rank
+FROM employees e
+JOIN orders o ON o.employee_id = e.employee_id
+GROUP BY e.employee_id, e.first_name, e.last_name, e.region_id;
+
+
+Q7. [Real Problem] Monthly return-rate trend, Kitchen category only
+
+-- Reuse the item_returns CTE from Section 07 (above), then:
+WITH item_returns AS (
+  SELECT oi.order_item_id, p.category, o.order_date,
+         CASE WHEN r.return_id IS NOT NULL THEN 1 ELSE 0 END AS was_returned
+  FROM order_items oi
+  JOIN orders o    ON o.order_id = oi.order_id
+  JOIN products p  ON p.product_id = oi.product_id
+  LEFT JOIN returns r ON r.order_item_id = oi.order_item_id
+)
+SELECT category, DATE_FORMAT(order_date, '%Y-%m') AS ym,
+       ROUND(100.0 * AVG(was_returned), 1) AS return_rate_pct
+FROM item_returns
+WHERE category = 'Kitchen'
+GROUP BY category, ym
+ORDER BY ym;
+
+
+==============================================================
+End of answer key.
