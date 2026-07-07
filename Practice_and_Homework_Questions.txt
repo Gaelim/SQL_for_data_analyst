@@ -1,0 +1,93 @@
+SQL FOR DATA ANALYSTS (MySQL Edition)
+Practice Questions & Homework Questions
+========================================
+
+
+PART 1: IN-COURSE PRACTICE QUESTIONS
+(One per section — these are the business requests worked through during the lessons)
+--------------------------------------------------------------------------------------
+
+SECTION 02 — QUERYING FUNDAMENTALS
+Requested by: Merchandising Manager
+"Can you pull our 5 priciest Kitchen products? I want to feature them in the
+fall catalog."
+
+
+SECTION 03 — JOINS (Chaining Joins Across the Schema)
+Requested by: VP of Sales
+"I need total revenue broken out by region for Monday's board deck."
+
+
+SECTION 03 — JOINS (Self Joins: Rep -> Manager)
+Requested by: HR Business Partner
+"For the new org chart, can you list every sales rep next to their manager's
+name?"
+
+
+SECTION 04 — AGGREGATION & GROUPING
+Requested by: Finance
+"Break down revenue and average discount by product category for the monthly
+close."
+
+
+SECTION 05 — SUBQUERIES
+Requested by: Loyalty Team
+"Who are the customers spending above our company average? I want to build a
+VIP list."
+
+
+SECTION 05 — CTEs (the WITH Clause)
+Requested by: Operations Director
+"Which months came in below our yearly average revenue? I want to flag them
+for the QBR."
+
+
+SECTION 06 — WINDOW FUNCTIONS (RANK / ROW_NUMBER)
+Requested by: Sales Leadership
+"Rank every rep by total revenue company-wide for the quarterly incentive
+review."
+
+
+SECTION 06 — WINDOW FUNCTIONS (LAG & Running Totals)
+Requested by: CFO
+"I want month-over-month change and a running cumulative revenue total for
+the investor update."
+
+
+SECTION 07 — SOLVING THE REAL PROBLEM
+Requested by: COO
+"Is our return rate creeping up, and is it worse in specific product
+categories? I need the trend, not just a snapshot."
+
+
+PART 2: APPENDIX HOMEWORK QUESTIONS
+(Try writing each query yourself before checking the answer document)
+------------------------------------------------------------------------
+
+Q1. [Fundamentals]
+The Buying team wants the 5 cheapest products in the Storage category.
+
+Q2. [Joins]
+Marketing wants customers who signed up but never placed an order, for a
+win-back email.
+
+Q3. [Self Joins]
+HR wants every sales rep listed with their manager's name for the org chart.
+
+Q4. [Aggregation]
+Finance wants only the product categories averaging over 15% discount.
+
+Q5. [Subqueries]
+The loyalty team wants customers whose total spend is above the overall
+average customer spend.
+
+Q6. [Window Functions]
+Sales leadership wants each rep ranked by revenue within their own region,
+not company-wide.
+
+Q7. [Real Problem]
+The COO wants the monthly return-rate trend for the Kitchen category only.
+
+
+========================================
+End of question list. See "SQL_Answers.txt" for full solutions.
